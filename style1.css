@@ -1,0 +1,91 @@
+@import "./theme.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    var(--acik-kirmizi),
+    var(--tropikal-yesil3)
+  );
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vw;
+  align-items: center;
+  width: 100%;
+  height: 5vw;
+}
+.icon {
+  margin: 0%;
+  width: 50%;
+  height: 5vw;
+  background-color: var(--gri-6);
+  display: flex;
+  align-items: center;
+}
+.box {
+  background-color: var(--gri-9);
+  height: 6vw;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2px;
+  box-shadow: -2px -2px var(--gri-8);
+  transition: color 0.5s;
+}
+.box a {
+  padding: 3px;
+  text-decoration: none;
+  font-size: smaller;
+  color: black;
+}
+.icon2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--mavi-6);
+  margin: 0%;
+  width: 50%;
+  height: 5vw;
+}
+.box :hover a {
+  color: coral;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.box:hover {
+  transform: scale(1.3);
+}
+.shoes:hover {
+  transform: scale(1.2);
+}
+.glases:hover {
+  transform: scale(1.2);
+}
+.tshirts:hover {
+  transform: scale(1.2);
+}
+.icon2 i:hover {
+  transform: scale(1.5);
+}
+.icon2 i {
+  padding: 1.5px;
+}
+@media screen and (max-width: 900px) and (min-width: 450px) {
+  .box {
+    transition: all 1s;
+    flex-direction: column;
+    height: 16vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+  }
+}
